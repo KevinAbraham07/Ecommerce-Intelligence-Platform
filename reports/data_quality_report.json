@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "source_file": "C:\\Users\\kevin\\Ecomm Intelli PF\\data\\raw\\online_retail_II.xlsx",
+    "file_size_mb": 43.51,
+    "file_type": ".xlsx",
+    "sheets_loaded": [
+      {
+        "sheet_name": "Year 2009-2010",
+        "rows_read": 525461
+      },
+      {
+        "sheet_name": "Year 2010-2011",
+        "rows_read": 541910
+      }
+    ],
+    "total_raw_rows": 1067371,
+    "total_raw_columns": 9
+  },
+  "audit": {
+    "total_records": 1067371,
+    "date_range": {
+      "start": "2009-12-01 07:45:00",
+      "end": "2011-12-09 12:50:00",
+      "duration_days": 738
+    },
+    "entities": {
+      "unique_invoices": 53628,
+      "unique_customers": 5942,
+      "unique_stock_codes": 5305,
+      "unique_countries": 43
+    },
+    "missingness": {
+      "missing_customer_id_count": 243007,
+      "missing_customer_id_pct": 22.77,
+      "missing_description_count": 4382,
+      "missing_description_pct": 0.41,
+      "table": [
+        {
+          "column": "Customer ID",
+          "missing_count": 243007,
+          "missing_percentage": 22.77,
+          "dtype": "float64"
+        },
+        {
+          "column": "Description",
+          "missing_count": 4382,
+          "missing_percentage": 0.41,
+          "dtype": "object"
+        },
+        {
+          "column": "Invoice",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "dtype": "str"
+        },
+        {
+          "column": "Quantity",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "dtype": "int64"
+        },
+        {
+          "column": "StockCode",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "dtype": "str"
+        },
+        {
+          "column": "InvoiceDate",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "dtype": "datetime64[us]"
+        },
+        {
+          "column": "Price",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "dtype": "float64"
+        },
+        {
+          "column": "Country",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "dtype": "str"
+        },
+        {
+          "column": "sheet_source",
+          "missing_count": 0,
+          "missing_percentage": 0.0,
+          "dtype": "str"
+        }
+      ]
+    },
+    "integrity": {
+      "duplicate_records_count": 34335,
+      "duplicate_records_pct": 3.22,
+      "cancellations_count": 19494,
+      "cancellations_pct": 1.83,
+      "negative_quantity_count": 22950,
+      "zero_quantity_count": 0,
+      "negative_quantity_without_c_flag": 3457,
+      "cancellations_with_positive_quantity": 1,
+      "negative_price_count": 5,
+      "zero_price_count": 6202,
+      "admin_stock_codes_count": 5525
+    }
+  }
+}
